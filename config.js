@@ -1,6 +1,6 @@
 module.exports = {
-  siteTitle: 'Gatsby Starter New age', // <title>
-  manifestName: 'newage',
+  siteTitle: 'Muqo', // <title>
+  manifestName: 'Muqo',
   manifestShortName: 'Landing', // max 12 characters
   manifestStartUrl: '/',
   manifestBackgroundColor: '#663399',

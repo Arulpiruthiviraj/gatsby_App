@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import config from '../../config';
 import Scroll from './Scroll';
+import MuqoIcon from '../assets/muqo/images/muqo.svg';
 export default class Header extends Component {
   constructor(props) {
     super(props);
@@ -40,9 +41,7 @@ export default class Header extends Component {
         id="mainNav"
       >
         <div className="container">
-          <a className="navbar-brand" href="#page-top">
-            {config.siteTitle}
-          </a>
+          <img src={MuqoIcon} alt={'new '} style={{ width: '100px' }} />
           <button
             onClick={_ => this.toggleMenu(!openMenu)}
             className={`navbar-toggler navbar-toggler-right ${
@@ -62,7 +61,7 @@ export default class Header extends Component {
             id="navbarResponsive"
           >
             <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Scroll
                   onClick={_ => this.toggleMenu(!openMenu)}
                   type="id"
@@ -72,19 +71,23 @@ export default class Header extends Component {
                     Download
                   </a>
                 </Scroll>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <Scroll
                   onClick={_ => this.toggleMenu(!openMenu)}
                   type="id"
                   element="features"
                 >
-                  <a className="nav-link" href="#features">
+                  <a
+                    className="nav-link"
+                    href="#features"
+                    style={{ color: 'red' }}
+                  >
                     Features
                   </a>
                 </Scroll>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Scroll
                   onClick={_ => this.toggleMenu(!openMenu)}
                   type="id"
@@ -94,7 +97,7 @@ export default class Header extends Component {
                     Contact
                   </a>
                 </Scroll>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
