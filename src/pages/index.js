@@ -20,24 +20,44 @@ import { ImQrcode } from 'react-icons/im';
 import { BsCameraVideo } from 'react-icons/bs';
 import { FaSearchengin } from 'react-icons/fa';
 import userProfileScreenImage from '../assets/muqo/images/profileMuqoAppScree.png';
+import Video from '../components/Video';
 
 const IndexPage = () => {
-  const [playingVideo, setPlayingVideo] = useState(video1);
-
+  const sectionOfVideos = [
+    video1,
+    video2,
+    video3,
+    video4,
+    video5,
+    video6,
+    video7,
+    video8,
+    video9,
+    video10,
+  ];
+  const [selectedVideo, setSelectedVideo] = useState(video1);
+  console.log(selectedVideo);
   useEffect(() => {
-    var bool = true;
-
-    setInterval(() => {
-      if (bool) {
-        setPlayingVideo(video2);
-        bool = !bool;
-      } else {
-        setPlayingVideo(video3);
-
-        bool = !bool;
-      }
-    }, 1000 * 10);
+    const interval = setInterval(() => {
+      setSelectedVideo(video5);
+    }, 5000);
   }, []);
+
+  // useEffect(() => {
+  //   var bool = true;
+
+  //   setInterval(() => {
+  //     if (bool) {
+  //       setSectionOfVideos([video2, video4, video6, video8, video10]);
+  //       bool = !bool;
+  //     } else {
+  //       setSectionOfVideos([video1, video3, video5, video7, video9]);
+
+  //       bool = !bool;
+  //     }
+  //   }, 1000 * 10);
+  // }, []);
+
   return (
     <Layout>
       <Header />
@@ -108,21 +128,10 @@ const IndexPage = () => {
                     allowFullScreen
                   ></iframe> */}
 
-                      <div id="video-container">
-                        <video autoPlay loop muted className="fillWidth">
-                          <source src={playingVideo} type="video/mp4" />
-                          {/* <source
-                        src="http://yourwebsite.com/your-video-file.ogg"
-                        type="video/ogg"
-                      />
-                      <source
-                        src="http://yourwebsite.com/your-video-file.webm"
-                        type="video/webm"
-                      /> */}
-                          Your browser does not support the video tag. I suggest
-                          you upgrade your browser.
-                        </video>
-                      </div>
+                      {/* {sectionOfVideos &&
+                        sectionOfVideos.map((video, index) => ( */}
+                      <Video video={selectedVideo} />
+                      {/* ))} */}
                     </div>
                     <div className="button"></div>
                   </div>

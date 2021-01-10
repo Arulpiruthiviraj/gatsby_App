@@ -8,11 +8,11 @@ header.masthead {
 
   color: rgb(0, 0, 0);
   background: $theme-secondary;
-  background: -webkit-linear-gradient(
-    to left,
-    $theme-secondary,
-    $theme-tertiary
-  );
+  // background: -webkit-linear-gradient(
+  //   to left,
+  //   $theme-secondary,
+  //   $theme-tertiary
+  // );
   // background: linear-gradient(to left, $theme-secondary, $theme-tertiary);
   .header-content {
     max-width: 500px;
