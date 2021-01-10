@@ -1,8 +1,9 @@
 // Bootstrap overrides for this template
 .bg-primary {
-    background: $theme-primary;
-    // background: -webkit-linear-gradient($theme-primary, darken($theme-primary, 5%));
+    background: $theme-red;
+    background: -webkit-linear-gradient($theme-red, darken($theme-red, 5%));
     // background: linear-gradient($theme-primary, darken($theme-primary, 5%));
+    // background-color: red;
 }
 
 .text-primary {
