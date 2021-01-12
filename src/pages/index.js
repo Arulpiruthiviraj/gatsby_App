@@ -193,15 +193,7 @@ const IndexPage = () => {
               }}
             >
               <img src={userProfileScreenImage} alt="profile screen" />
-              <h6
-                style={{
-                  textAlign: 'center',
-                  alignItems: 'center',
-                  color: 'black',
-                }}
-              >
-                Show Your Talent
-              </h6>
+              <h6 style={{ fontFamily: 'Helvetica' }}>Show Your Talent</h6>
             </Col>
             <Col
               sm={true}
@@ -213,14 +205,7 @@ const IndexPage = () => {
             >
               {' '}
               <img src={userProfileScreenImage} alt="profile screen" />
-              <h6
-                style={{
-                  textAlign: 'center',
-                  color: 'black',
-                }}
-              >
-                Gain Subcribers
-              </h6>
+              <h6 style={{ fontFamily: 'Helvetica' }}>Gain Subcribers</h6>
             </Col>
             <Col
               sm={true}
@@ -232,7 +217,9 @@ const IndexPage = () => {
             >
               {' '}
               <img src={userProfileScreenImage} alt="profile screen" />
-              <h6>Get Paid for What you love</h6>
+              <h6 style={{ fontFamily: 'Helvetica' }}>
+                Get Paid for What you love
+              </h6>
             </Col>
           </Row>
         </div>
