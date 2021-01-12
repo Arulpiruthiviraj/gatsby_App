@@ -62,7 +62,11 @@ const IndexPage = () => {
     <Layout>
       <Header />
 
-      <header className="masthead">
+      <header
+        className="masthead"
+        id="page-top"
+        style={{ padding: '0 0 90px  0' }}
+      >
         <div className="container h-100">
           <div
             style={{
@@ -72,25 +76,33 @@ const IndexPage = () => {
               position: 'relative',
             }}
           >
-            <h6>Music Meets Social Media</h6>
-            <h6>#MusicMovement</h6>
+            <h6 style={{ fontFamily: "'Redressed', cursive", fontSize: 40 }}>
+              Music Meets Social Media
+            </h6>
+            <h6
+              style={{
+                fontFamily: "'Lobster Two', cursive",
+                fontSize: 35,
+                color: 'red',
+              }}
+            >
+              #MusicMovement
+            </h6>
           </div>
           <div className="row h-100">
             <div className="col-lg-7 my-auto">
               <div className="header-content mx-auto">
-                <h1 className="mb-5">Create,Explore and Share Music Videos</h1>
-                <h6>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Quisque nisl eros, pulvinar facilisis justo mollis, auctor
-                  consequat urna. Morbi a bibendum metus. Donec scelerisque
-                  sollicitudin enim eu venenatis. Duis tincidunt laoreet ex, in
-                  pretium orci vestibulum eget. Class aptent taciti sociosqu ad
-                  litora torquent per conubia nostra, per inceptos himenaeos.
-                  Duis pharetra luctus lacus ut vestibulum. Maecenas ipsum
-                  lacus, lacinia quis posuere ut, pulvinar vitae dolor. Integer
-                  eu nibh at nisi ullamcorper sagittis id vel leo. Integer
-                  feugiat faucibus libero, at maximus nisl suscipit posuere
-                </h6>
+                <h1 className="mb-5" style={{ fontFamily: 'Special Elite' }}>
+                  Create,Explore and Share Music Videos
+                </h1>
+                <p style={{ padding: '0', fontFamily: 'Sacramento' }}>
+                  Your all-in-one music destination. Mq Music enables musicians
+                  around the world to pursue a full time music career with
+                  weekly payouts, daily virtual concerts and fan subscriptions.
+                  Mq Music provides music fans with a social music experience
+                  like none other. Your music tribe lives here - listen to
+                  music, watch music content and create your own music videos.
+                </p>
                 <h2 className="section-heading">Download Muqo Now</h2>
                 <p>
                   Our app is available on any mobile device! Download now to get
@@ -119,19 +131,7 @@ const IndexPage = () => {
                 <div className="device-mockup iphone6_plus portrait black">
                   <div className="device">
                     <div className="screen">
-                      {/* <img src={demo1} className="img-fluid" alt="" /> */}
-                      {/* <iframe
-                    width="560"
-                    height="315"
-                    src="//www.youtube.com/embed/f890SC1schE"
-                    frameBorder="0"
-                    allowFullScreen
-                  ></iframe> */}
-
-                      {/* {sectionOfVideos &&
-                        sectionOfVideos.map((video, index) => ( */}
                       <Video video={selectedVideo} />
-                      {/* ))} */}
                     </div>
                     <div className="button"></div>
                   </div>
@@ -150,31 +150,26 @@ const IndexPage = () => {
               <BsCameraVideo size={70} />
               <h4>Make Your Own Videos</h4>
               <h6>
-                In some cases you may need to change the base class "prefix" of
-                one or more Components. You can control how a Component prefixes
-                its classes locally by changing the bsPrefix prop. Or globally
-                via the ThemeProvider Component.
+                Make your own music videos: Record personal music videos,
+                whether it's a dance challenge or a song cover you're the
+                rockstar here.
               </h6>
             </Col>
             <Col sm>
               {' '}
               <FaSearchengin size={70} />
-              <h4>Make Your Own Videos</h4>
+              <h4>Explore Music Content</h4>
               <h6>
-                In some cases you may need to change the base class "prefix" of
-                one or more Components. You can control how a Component prefixes
-                its classes locally by changing the bsPrefix prop. Or globally
-                via the ThemeProvider Component.
+                Explore music content: Browse different music categories and
+                discover the latest trends, songs and artists.
               </h6>
             </Col>
             <Col sm>
               <ImQrcode size={70} />
-              <h4>Make Your Own Videos</h4>
+              <h4>Refer & Receive</h4>
               <h6>
-                In some cases you may need to change the base class "prefix" of
-                one or more Components. You can control how a Component prefixes
-                its classes locally by changing the bsPrefix prop. Or globally
-                via the ThemeProvider Component.
+                Every referral is worth $5 of in app money. You can receive
+                music merchandise, tickets and musician subscriptions.
               </h6>
             </Col>
           </Row>

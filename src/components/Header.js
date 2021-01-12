@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import config from '../../config';
+
 import Scroll from './Scroll';
 import MuqoIcon from '../assets/muqo/images/muqo.svg';
 export default class Header extends Component {
@@ -41,10 +41,10 @@ export default class Header extends Component {
         id="mainNav"
       >
         <div className="container">
+          {' '}
           <a className="navbar-brand" href="#page-top">
             <img src={MuqoIcon} alt={'new '} style={{ width: '100px' }} />
           </a>
-
           <button
             onClick={_ => this.toggleMenu(!openMenu)}
             className={`navbar-toggler navbar-toggler-right ${
@@ -58,7 +58,6 @@ export default class Header extends Component {
             Menu
             <i className="fas fa-bars"></i>
           </button>
-
           <div
             className={`collapse navbar-collapse ${openMenu ? 'show' : ''}`}
             id="navbarResponsive"
