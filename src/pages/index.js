@@ -76,24 +76,23 @@ const IndexPage = () => {
               position: 'relative',
             }}
           >
-            <h6 style={{ fontFamily: "'Redressed', cursive", fontSize: 40 }}>
-              Music Meets Social Media
+            <h6 style={{ fontFamily: "'Redressed", fontSize: 40 }}>
+              Music for You.
             </h6>
             <h6
               style={{
-                fontFamily: "'Lobster Two', cursive",
+                fontFamily: "'Lobster Two'",
                 fontSize: 35,
-                color: 'red',
               }}
             >
-              #MusicMovement
+              Music by You
             </h6>
           </div>
           <div className="row h-100">
             <div className="col-lg-7 my-auto">
               <div className="header-content mx-auto">
                 <h1 className="mb-5" style={{ fontFamily: 'Special Elite' }}>
-                  Create,Explore and Share Music Videos
+                  All In-One Music Destination
                 </h1>
                 <p style={{ padding: '0', fontFamily: 'Sacramento' }}>
                   Your all-in-one music destination. Mq Music enables musicians
@@ -104,10 +103,7 @@ const IndexPage = () => {
                   music, watch music content and create your own music videos.
                 </p>
                 <h2 className="section-heading">Download Muqo Now</h2>
-                <p>
-                  Our app is available on any mobile device! Download now to get
-                  started!
-                </p>
+                <p>Download the App Now</p>
                 <div className="badges">
                   <a className="badge-link" href="/#">
                     <img
@@ -150,9 +146,8 @@ const IndexPage = () => {
               <BsCameraVideo size={70} />
               <h4>Make Your Own Videos</h4>
               <h6>
-                Make your own music videos: Record personal music videos,
-                whether it's a dance challenge or a song cover you're the
-                rockstar here.
+                Record personal music videos, whether it's a dance challenge or
+                a song cover you're the rockstar here.
               </h6>
             </Col>
             <Col sm>
@@ -160,8 +155,8 @@ const IndexPage = () => {
               <FaSearchengin size={70} />
               <h4>Explore Music Content</h4>
               <h6>
-                Explore music content: Browse different music categories and
-                discover the latest trends, songs and artists.
+                Browse different music categories and discover the latest
+                trends, songs and artists.
               </h6>
             </Col>
             <Col sm>
@@ -179,7 +174,7 @@ const IndexPage = () => {
       <section className="features" id="features">
         <div className="container">
           <div className="section-heading text-center">
-            <h2>Satrt You Music Career with Muqo</h2>
+            <h2>Start your music career on Mq Music</h2>
 
             <hr />
           </div>
