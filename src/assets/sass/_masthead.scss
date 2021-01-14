@@ -27,6 +27,9 @@ margin-top: 100px;
     max-width: 325px;
     margin-right: auto;
     margin-left: auto;
+    bottom: 100px;
+    position: relative;
+
     .screen img {
       border-radius: 3px;
     }
@@ -46,6 +49,8 @@ margin-top: 100px;
     }
     .device-container {
       max-width: 325px;
+      top: 5px;
+      position: relative;
     }
   }
 }

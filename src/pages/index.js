@@ -77,23 +77,29 @@ const IndexPage = () => {
             }}
           >
             <h6 style={{ fontFamily: "'Redressed", fontSize: 40 }}>
-              Music for You.
+              Music for you. Music by you
             </h6>
-            <h6
+            {/* <h6
               style={{
                 fontFamily: "'Lobster Two'",
                 fontSize: 35,
               }}
             >
               Music by You
-            </h6>
+            </h6> */}
           </div>
           <div className="row h-100">
             <div className="col-lg-7 my-auto">
               <div className="header-content mx-auto">
-                <h1 className="mb-5" style={{ fontFamily: 'Special Elite' }}>
-                  All In-One Music Destination
+                <h1
+                  className="mb-5"
+                  style={{ fontFamily: 'Special Elite', textAlign: 'center' }}
+                >
+                  All-in-one
+                  <br />
+                  Music destination
                 </h1>
+
                 <p style={{ padding: '0', fontFamily: 'Sacramento' }}>
                   Your all-in-one music destination. Mq Music enables musicians
                   around the world to pursue a full time music career with
@@ -122,7 +128,7 @@ const IndexPage = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-5 my-auto">
+            <div className="col-lg-5 my-auto" style={{ top: '70px' }}>
               <div className="device-container">
                 <div className="device-mockup iphone6_plus portrait black">
                   <div className="device">
