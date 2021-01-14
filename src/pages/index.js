@@ -101,12 +101,12 @@ const IndexPage = () => {
                 </h1>
 
                 <p style={{ padding: '0', fontFamily: 'Sacramento' }}>
-                  Your all-in-one music destination. Mq Music enables musicians
-                  around the world to pursue a full time music career with
-                  weekly payouts, daily virtual concerts and fan subscriptions.
-                  Mq Music provides music fans with a social music experience
-                  like none other. Your music tribe lives here - listen to
-                  music, watch music content and create your own music videos.
+                  Mq Music enables musicians around the world to pursue a full
+                  time music career with weekly payouts, daily virtual concerts
+                  and fan subscriptions. Mq Music provides music fans with a
+                  social music experience like none other. Your music tribe
+                  lives here - listen to music, watch music content and create
+                  your own music videos.
                 </p>
                 <h2 className="section-heading">Download Muqo Now</h2>
                 <p>Download the App Now</p>
